@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'website/index.html')
 
 def about(request):
-    return HttpResponse('Hello, world! this about page')
+    return HttpResponse('Hello, world! this is about page')
 
 def contact(request):
-    return HttpResponse('Hello, world! this contact page')
+    return HttpResponse('Hello, world! this is contact page')

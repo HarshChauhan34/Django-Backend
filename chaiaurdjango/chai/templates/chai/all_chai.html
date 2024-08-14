@@ -1,19 +1,17 @@
-{% extends "layout.html" %}
-
-{% block title %}
-chai Page
-{% endblock %}
+{% extends "layout.html" %} 
+{% block title %} Chai Page {% endblock %} 
 
 {% block content %}
-
 <h1>All chai for you</h1>
+
+<div class="grid grid-cols-3 gap-4 m-4">
+  {% for chai in chais %}
+  <div class="chai-item">
+    <img class="rounded" src="{{chai.image.url}}" alt="{{chai.name}}" />
+    <h3>{{chai.name}}</h3>
+  </div>
+  {% endfor %}
+</div>
 
 {% endblock %}
 
-{% for  %}
-<div class="chai-item">
-    <img src="{{chai.img.url}}" alt="{{chai.name}}">
-    <h3>{{chai.name}}</h3>
-
-</div>  
-{% endfor %}
